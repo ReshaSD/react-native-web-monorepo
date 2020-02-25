@@ -11,12 +11,12 @@
   },
   "scripts": {
     "compile": "tsc -b",
-    "prestart": "npm run compile",
-    "start": "concurrently \"npm run compile -- -w --incremental\" \"npm run _start\"",
+    "prestart": "yarn run compile",
+    "start": "concurrently \"yarn run compile -w --incremental\" \"yarn run _start\"",
     "_start": "react-app-rewired start",
-    "prebuild": "npm run compile",
+    "prebuild": "yarn run compile",
     "build": "react-app-rewired build",
-    "pretest": "npm run compile",
+    "pretest": "yarn run compile",
     "test": "react-app-rewired test",
     "eject": "react-app-rewired eject"
   },

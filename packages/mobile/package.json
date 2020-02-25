@@ -7,9 +7,9 @@
     "compile": "tsc -b --incremental",
     "ios": "react-native run-ios",
     "lint": "eslint .",
-    "prestart": "npm run compile",
-    "start": "concurrently \"npm run compile -- -w\" \"react-native start\"",
-    "studio": "studio android",
+    "prestart": "yarn run compile",
+    "start": "concurrently \"yarn run compile -w\" \"react-native start\"",
+    "studio": "studio64 android",
     "test": "jest",
     "xcode": "open ios/myprojectname.xcworkspace"
   },
